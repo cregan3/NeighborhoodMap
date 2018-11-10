@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neighborhood Map</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="title-box">
+          <h1>Amazing Restaurants in NYC by a Local</h1>
+      </div>
+      <div id="options-box">
+        <div id="map"></div>
+        <div id="content">
+          <input id="show-restaurants" type="button" value="Show All Restaurants" />
+          <input id="hide-restaurants" type="button" value="Hide All Restaurants" />
+          <div id="searchDiv">
+            <input placeholder="Enter name of restaurant to search"; id="searchInput">
+            <div >
+              <input id="searchButton" type="button" value="Search" />
+            </div>
+          </div>
+          <div id="listOfRestaurantsContainer">
+            <span id="listOfRestaurantsTitle">List of Restaurants</span>
+            <div id="listOfRestaurants">
+              <ul id="listOfRestaurantsUL">
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <script src="./js/app.js"></script>
+      </div>
+
+    </div>
+
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmjI8t-x5OZdt1JbGA76oyGWyCIqI42KA&v=3&callback=initMap">
+    </script>
+    <script
+        src="./js/register.js">
+    </script>
+  </body>
+</html>
